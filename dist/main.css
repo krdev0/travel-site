@@ -1,0 +1,221 @@
+/*!***********************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./sass/main.scss ***!
+  \***********************************************************************************************************/
+:root {
+  --color-primary: #3e20d9;
+  --color-primary-light: #ebe8fb;
+  --color-primary-dark: #BA265D;
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, .06);
+  --line: 1px solid var(--color-grey-light-2); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-grey-dark-2);
+  background-image: url(aec5a5ee7a081a20bef7.jpg);
+  background-size: cover;
+  background-position: 0 30%;
+  background-repeat: no-repeat; }
+
+.container {
+  max-width: 120rem;
+  margin: 8rem auto; }
+
+.main {
+  display: flex;
+  min-height: 60rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 4.5rem;
+  padding: 1rem; }
+  .main .content {
+    flex: 1;
+    display: flex;
+    margin-left: 2rem; }
+    .main .content .info {
+      flex: 0 0 40%; }
+      .main .content .info .search {
+        margin: 2rem 0;
+        display: flex;
+        border-bottom: 1px solid var(--color-grey-dark-2); }
+        .main .content .info .search input {
+          font-family: inherit;
+          font-weight: 500;
+          font-size: 1.4rem;
+          flex: 0 0 95%;
+          border: none;
+          outline: none;
+          background-color: transparent;
+          padding-bottom: 1.2rem; }
+        .main .content .info .search__icon {
+          flex: 1;
+          width: 1.6rem;
+          height: 1.6rem;
+          border: none;
+          fill: var(--color-grey-dark-2); }
+      .main .content .info .form {
+        background-color: white;
+        padding: 2rem;
+        border-radius: 3.5rem;
+        position: relative; }
+        .main .content .info .form .form-control {
+          margin: 1.8rem 0 0 0;
+          display: flex;
+          align-items: center;
+          width: 80%; }
+          .main .content .info .form .form-control input {
+            color: #000;
+            outline: none;
+            border: none; }
+            .main .content .info .form .form-control input::placeholder {
+              color: #000;
+              font-size: 1.6rem; }
+          .main .content .info .form .form-control.date p:first-of-type {
+            margin-right: 3.4rem; }
+          .main .content .info .form .form-control.date p:nth-of-type(2) {
+            margin-left: 3.4rem; }
+          .main .content .info .form .form-control.date div {
+            font-size: 1.6rem; }
+          .main .content .info .form .form-control:first-child, .main .content .info .form .form-control:nth-child(2) {
+            border-bottom: 1px solid #efefef;
+            padding-bottom: 1.4rem; }
+          .main .content .info .form .form-control p {
+            font-size: 1.6rem; }
+          .main .content .info .form .form-control span {
+            background-color: var(--color-primary-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            border-radius: 1.2rem;
+            margin-right: 2.4rem; }
+        .main .content .info .form__icon {
+          fill: var(--color-primary);
+          width: 2.1rem;
+          height: 2.1rem; }
+        .main .content .info .form h2 {
+          color: #000;
+          text-transform: uppercase;
+          font-size: 1.3rem;
+          font-weight: 900; }
+        .main .content .info .form__button {
+          position: absolute;
+          background-color: var(--color-primary);
+          border: none;
+          top: 0;
+          right: 0;
+          width: 8rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          border-radius: 2.5rem; }
+          .main .content .info .form__button svg {
+            fill: white;
+            width: 1.8rem;
+            height: 1.8rem; }
+      .main .content .info .popular-stays {
+        margin-top: 2rem; }
+        .main .content .info .popular-stays h2 {
+          font-size: 3rem;
+          color: #000; }
+        .main .content .info .popular-stays .subtitle {
+          font-size: 1.4rem;
+          color: #000; }
+        .main .content .info .popular-stays .places {
+          margin-top: 1.5rem; }
+          .main .content .info .popular-stays .places .place {
+            display: flex;
+            padding: .8rem;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 2.5rem; }
+            .main .content .info .popular-stays .places .place:not(:last-child) {
+              margin-bottom: 1rem; }
+            .main .content .info .popular-stays .places .place img {
+              object-fit: cover;
+              display: flex;
+              border-radius: 2.5rem;
+              margin-right: 1.5rem; }
+            .main .content .info .popular-stays .places .place .place-info {
+              color: black;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              flex: 1; }
+              .main .content .info .popular-stays .places .place .place-info__subtitle {
+                font-size: 1.5rem;
+                color: grey; }
+              .main .content .info .popular-stays .places .place .place-info__title {
+                font-weight: 900;
+                font-size: 2rem; }
+              .main .content .info .popular-stays .places .place .place-info__price {
+                font-size: 1.5rem; }
+              .main .content .info .popular-stays .places .place .place-info__rating {
+                display: flex;
+                align-items: center; }
+                .main .content .info .popular-stays .places .place .place-info__rating svg {
+                  margin-right: .5rem; }
+                .main .content .info .popular-stays .places .place .place-info__rating p {
+                  font-size: 1.4rem; }
+                .main .content .info .popular-stays .places .place .place-info__rating span {
+                  color: grey; }
+    .main .content .hero {
+      flex: 1; }
+
+.sidenav {
+  flex: 0 0 7%;
+  background-color: var(--color-primary);
+  border-radius: 3rem 2rem 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; }
+  .sidenav__logo {
+    text-align: center;
+    line-height: 2rem;
+    margin-top: 3rem; }
+    .sidenav__logo a {
+      color: white;
+      font-size: 2.1rem;
+      text-decoration: none;
+      font-weight: 300; }
+      .sidenav__logo a span {
+        font-weight: bold; }
+  .sidenav .nav {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%); }
+    .sidenav .nav ul {
+      list-style: none; }
+    .sidenav .nav__item {
+      padding: 2rem 0; }
+    .sidenav .nav__img {
+      width: 2.25rem;
+      height: 2.25rem;
+      fill: #7660e4; }
+      .sidenav .nav__img.active {
+        fill: white; }
+
+
+/*# sourceMappingURL=main.css.map*/

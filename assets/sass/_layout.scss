@@ -1,0 +1,215 @@
+.main {
+    display         : flex;
+    min-height      : 60rem;
+    background-color: rgba(255, 255, 255, .7);
+    border-radius   : 4.5rem;
+    padding         : 1rem;
+
+    .content {
+        flex       : 1;
+        display    : flex;
+        margin-left: 2rem;
+
+        .info {
+            flex: 0 0 40%;
+
+            .search {
+                margin       : 2rem 0;
+                display      : flex;
+                border-bottom: 1px solid var(--color-grey-dark-2);
+
+                input {
+                    font-family     : inherit;
+                    font-weight     : 500;
+                    font-size       : 1.4rem;
+                    flex            : 0 0 95%;
+                    border          : none;
+                    outline         : none;
+                    background-color: transparent;
+                    padding-bottom  : 1.2rem;
+                }
+
+                &__icon {
+                    flex  : 1;
+                    width : 1.6rem;
+                    height: 1.6rem;
+                    border: none;
+                    fill  : var(--color-grey-dark-2);
+                }
+            }
+
+            .form {
+                background-color: white;
+                padding         : 2rem;
+                border-radius   : 3.5rem;
+                position        : relative;
+
+                .form-control {
+                    margin     : 1.8rem 0 0 0;
+                    display    : flex;
+                    align-items: center;
+                    width      : 80%;
+
+                    input {
+                        color  : #000;
+                        outline: none;
+                        border : none;
+
+                        &::placeholder {
+                            color    : #000;
+                            font-size: 1.6rem;
+                        }
+                    }
+
+                    &.date {
+                        p {
+                            &:first-of-type {
+                                margin-right: 3.4rem;
+                            }
+
+                            &:nth-of-type(2) {
+                                margin-left: 3.4rem;
+                            }
+                        }
+
+                        div {
+                            font-size: 1.6rem;
+                        }
+                    }
+
+                    &:first-child,
+                    &:nth-child(2) {
+                        border-bottom : 1px solid #efefef;
+                        padding-bottom: 1.4rem;
+                    }
+
+                    p {
+                        font-size: 1.6rem;
+                    }
+
+                    span {
+                        background-color: var(--color-primary-light);
+                        display         : flex;
+                        align-items     : center;
+                        justify-content : center;
+                        padding         : 1rem;
+                        border-radius   : 1.2rem;
+                        margin-right    : 2.4rem;
+                    }
+                }
+
+                &__icon {
+                    fill  : var(--color-primary);
+                    width : 2.1rem;
+                    height: 2.1rem;
+                }
+
+                h2 {
+                    color         : #000;
+                    text-transform: uppercase;
+                    font-size     : 1.3rem;
+                    font-weight   : 900;
+                }
+
+                &__button {
+                    position        : absolute;
+                    background-color: var(--color-primary);
+                    border          : none;
+                    top             : 0;
+                    right           : 0;
+                    width           : 8rem;
+                    display         : flex;
+                    justify-content : center;
+                    align-items     : center;
+                    height          : 100%;
+                    border-radius   : 2.5rem;
+
+                    svg {
+                        fill  : white;
+                        width : 1.8rem;
+                        height: 1.8rem;
+                    }
+                }
+
+            }
+
+            .popular-stays {
+                margin-top: 2rem;
+
+                h2 {
+                    font-size: 3rem;
+                    color    : #000;
+                }
+
+                .subtitle {
+                    font-size: 1.4rem;
+                    color    : #000;
+                }
+
+                .places {
+                    margin-top: 1.5rem;
+
+                    .place {
+                        display         : flex;
+                        padding         : .8rem;
+                        background-color: rgba(255, 255, 255, .7);
+                        border-radius   : 2.5rem;
+                        &:not(:last-child) {
+                            margin-bottom: 1rem;
+                        }
+
+                        img {
+                            object-fit   : cover;
+                            display      : flex;
+                            border-radius: 2.5rem;
+                            margin-right : 1.5rem;
+                        }
+
+                        .place-info {
+                            color          : black;
+                            display        : flex;
+                            flex-direction : column;
+                            justify-content: space-between;
+                            flex           : 1;
+
+                            &__subtitle {
+                                font-size: 1.5rem;
+                                color    : grey;
+                            }
+
+                            &__title {
+                                font-weight: 900;
+                                font-size  : 2rem;
+                            }
+
+                            &__price {
+                                font-size: 1.5rem;
+                            }
+
+                            &__rating {
+                                display    : flex;
+                                align-items: center;
+                                
+                                svg {
+                                    margin-right: .5rem;
+                                }
+
+                                p {
+                                    font-size: 1.4rem;
+                                }
+
+                                span {
+                                    color:grey;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .hero {
+            flex: 1;
+        }
+    }
+}

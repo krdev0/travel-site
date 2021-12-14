@@ -1,0 +1,22 @@
+{
+  "name": "Univerro",
+  "version": "1.0.0",
+  "description": "Univerro webpage",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack -w"
+  },
+  "author": "Jonas",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "css-loader": "^6.5.1",
+    "cssnano": "^5.0.12",
+    "mini-css-extract-plugin": "^2.4.5",
+    "node-sass": "^7.0.0",
+    "postcss-loader": "^6.2.1",
+    "sass-loader": "^12.4.0",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  }
+}
