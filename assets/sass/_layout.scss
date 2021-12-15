@@ -210,6 +210,20 @@
 
         .hero {
             flex: 1;
+            background-color: aqua;
+            margin-left: 2rem;
+            border-radius: 4.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .user {
+                display: inline-flex;
+                justify-content: flex-end;
+                margin-right: 4rem;
+                margin-top: 2rem;
+                background-color: white;
+            }
         }
     }
 }

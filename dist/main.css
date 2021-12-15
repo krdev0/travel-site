@@ -41,7 +41,7 @@ body {
 
 .container {
   max-width: 120rem;
-  margin: 8rem auto; }
+  margin: 6rem auto; }
 
 .main {
   display: flex;
@@ -181,7 +181,19 @@ body {
                 .main .content .info .popular-stays .places .place .place-info__rating span {
                   color: grey; }
     .main .content .hero {
-      flex: 1; }
+      flex: 1;
+      background-color: aqua;
+      margin-left: 2rem;
+      border-radius: 4.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .main .content .hero .user {
+        display: inline-flex;
+        justify-content: flex-end;
+        margin-right: 4rem;
+        margin-top: 2rem;
+        background-color: white; }
 
 .sidenav {
   flex: 0 0 7%;
