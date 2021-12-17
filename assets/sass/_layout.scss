@@ -154,6 +154,7 @@
                         padding         : .8rem;
                         background-color: rgba(255, 255, 255, .7);
                         border-radius   : 2.5rem;
+
                         &:not(:last-child) {
                             margin-bottom: 1rem;
                         }
@@ -189,7 +190,7 @@
                             &__rating {
                                 display    : flex;
                                 align-items: center;
-                                
+
                                 svg {
                                     margin-right: .5rem;
                                 }
@@ -199,7 +200,7 @@
                                 }
 
                                 span {
-                                    color:grey;
+                                    color: grey;
                                 }
                             }
                         }
@@ -209,20 +210,56 @@
         }
 
         .hero {
-            flex: 1;
-            background-color: aqua;
-            margin-left: 2rem;
+            flex         : 1;
+            margin-left  : 2rem;
             border-radius: 4.5rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            position     : relative;
 
             .user {
-                display: inline-flex;
-                justify-content: flex-end;
-                margin-right: 4rem;
-                margin-top: 2rem;
                 background-color: white;
+                border-radius   : 1.5rem;
+                padding         : 1rem 2rem;
+                position        : absolute;
+                top             : 7px;
+                right           : 10px;
+                display         : flex;
+                font-size       : 1.2rem;
+
+                span {
+                    font-weight: bold;
+                }
+            }
+
+            .htitle {
+                position   : absolute;
+                top        : 50%;
+                transform  : translate(0, -50%);
+                margin-left: 2rem;
+                font-size  : 2.8rem;
+                color      : var(--color-primary);
+
+                &__text {
+                    line-height: 5rem;
+
+                    .large {
+                        font-size  : 9rem;
+                        font-weight: bold;
+                        margin     : 2rem 0;
+                    }
+                }
+
+                button {
+                    border       : 2px solid white;
+                    background   : none;
+                    padding      : 1.5rem 3rem;
+                    border-radius: 1.7rem;
+
+                    color: white;
+
+                    span {
+                        margin-left: 3rem;
+                    }
+                }
             }
         }
     }
